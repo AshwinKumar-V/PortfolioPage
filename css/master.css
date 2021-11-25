@@ -1,0 +1,237 @@
+/*---------CSS for index.html--------*/
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+    background-color: #f2f2f2;
+    color: #333333;
+    margin: 3% 5%;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 29px;
+}
+h3{
+    font-size: 18px;
+    line-height: 22px;
+}
+h4, p{
+    font-size: 16px;
+    line-height: 20px;
+}
+h5{
+    font-size: 14px;
+    line-height: 17px;
+}
+p{
+    color: #828282;
+}
+
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+button{
+    background: none;
+    border: 1px solid #4F4F4F;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: .8% 2%;
+    margin-right: .5%;
+}
+button:hover{
+    cursor: pointer;
+    background-color:#2F80ED;
+    border-color: #2F80ED;
+    color: #ffffff;
+}
+
+.card1, .card2{
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 2.5% 0;
+    padding: 1.8%;
+}
+.card2{
+    padding: 5%;
+}
+
+.layout_grid{
+    display: grid;
+    grid-template:
+            "p1 p3" 1fr
+            "p2 p3" 1fr
+            "p2 p4" 1.8fr/
+            1fr 1.7fr ;
+    gap:1% 3%;
+}
+
+/*----------Profile---------*/
+.profile{
+    display: flex;
+    justify-content: space-between;
+}
+    .profile_img{
+        width: 30%;
+    }
+    .profile_text{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin: 0 3%;
+    }
+    .profile_text img{
+        width: auto;
+    }
+    .profile_text_header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3%;
+    }
+    .name, .contacts{
+        display: flex;
+        flex-direction: column;
+    }
+    .email, .phone{
+        display: flex;
+        align-items: center;
+        color: #333333;
+    }
+    .email_icon, .phone_icon{
+        margin-right: 5%;
+    }
+    .profile p{
+        font-size: 18px;
+        line-height: 22px;
+        margin: 3% 0;
+    }
+
+/*----------Skills---------*/
+.skill_list
+{
+    display: flex;
+    flex-direction: column;
+}
+    .skill_list h3{
+        margin-bottom: 3%;
+    }
+    .skill_list ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .skill{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3% 0;
+    }
+    .bar{
+        width: 60%;
+        height: 8px;
+        background-color: #C4C4C4;
+        border-radius: 12px;
+    }
+    .bar_len{
+        width: 40%;
+        height: 100%;
+        background-color: #2F80ED;
+        border-radius: 12px;
+    }
+    li:nth-child(2) .bar_len{
+        width: 70%;
+    }
+    li:nth-child(3) .bar_len{
+        width: 90%;
+    }
+    li:nth-child(5) .bar_len{
+        width: 50%;
+    }
+    li:nth-child(6) .bar_len{
+        width: 45%;
+    }
+
+/*----------Hobbies---------*/
+.hobbies, .hobbies_cards_wrapper, .hobbies_card{
+    display: flex;
+    flex-direction: column;
+}
+    .hobbies_cards_wrapper, .experiences_cards_wrapper{
+        margin-top: 8%;
+    }
+    .hobbies_card_img{
+        height: 30vh;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+    .hobbies_cards_wrapper *{
+        margin-bottom: 4%;
+    }
+
+/*----------Blog---------*/
+.blog, .experiences{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    .blog_header h2{
+        margin-top: 3%;
+    }
+    .blog_header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .blog_img{
+        margin-left: 5%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .blog_description *{
+        margin: 5% 0;
+    }
+    .blog a{
+        color: #2F80ED;
+        text-decoration: none;
+    }
+
+/*----------Experiences---------*/
+.experiences_cards_wrapper{
+    margin: 8% 1.5% 0;
+}
+.experiences_card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12%;
+}
+    .experiences_card_img{
+        width: 40%;
+        margin:0 8% 6% 0;
+    }
+    .experiences_card_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .experiences_card_text h5{
+        color:#828282;
+        margin-bottom: 3%;
+    }
+
+/*----------Projects Filter---------*/
+.projects_filter h3{
+    margin-bottom: 2%;
+}
